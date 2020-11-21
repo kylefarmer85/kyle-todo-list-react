@@ -16,11 +16,15 @@ class Form extends Component {
     })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault()
+    this.props.postTodo(this.state.todoField)
+  }
 
   render() {
     return (
       <div className="form-container">
-        <form onSubmit={(e) => this.props.onSubmit(e, this.state.todoField)}>
+        <form onSubmit={this.onSubmit}>
           <input type="text" name="todoField" value={this.state.todoField} onChange={this.onChange} />
           <button type="submit" >Add Todo</button>
         </form>

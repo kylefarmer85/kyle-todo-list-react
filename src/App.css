@@ -7,7 +7,13 @@ body {
   text-align: center;
 }
 
-ul {
-  text-align: center;
-  list-style-type: none;
+.todo-container ol {
+  text-align: left;
+  height: 500px;
+  overflow: scroll;
+
+}
+
+.completed {
+  text-decoration: line-through;
 }
