@@ -23,7 +23,6 @@ class App extends Component {
     })
   }
 
-
   postTodo = (todoField) => {
     fetch(URL, {
       method: 'POST',
@@ -36,7 +35,7 @@ class App extends Component {
         completed: false
       })
     })
-    .then(response => response.json())
+    .then(resp => resp.json())
     .then(newTodo => {
       this.setState(prevState => {
         return {
@@ -48,12 +47,13 @@ class App extends Component {
 
   deleteTodo = (id) => {
     fetch(URL + `/${id}`, {method: 'DELETE'})
-    .then(response => response.json())
-    .then()
+    .then(resp => resp.json())
+    .then(resp => {
       const updatedTodos = this.state.todos.filter(todoObj => todoObj.id !== id)
       this.setState({
         todos: updatedTodos
       })
+    })
   }
 
   markComplete = (id) => {
