@@ -10,7 +10,6 @@ class Form extends Component {
     }
 
   onChange = (e) => {
-    console.log(this.state.todoField);
     this.setState({
       [e.target.name]: e.target.value
     })
@@ -19,6 +18,9 @@ class Form extends Component {
   onSubmit = (e) => {
     e.preventDefault()
     this.props.postTodo(this.state.todoField)
+    this.setState({
+      todoField: ''
+    })
   }
 
   render() {

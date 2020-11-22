@@ -3,7 +3,9 @@ import "../App.css"
 import Form from './Form'
 import TodoContainer from './TodoContainer'
 
-const URL = 'https://jsonplaceholder.typicode.com/todos'
+// const URL = 'https://jsonplaceholder.typicode.com/todos'
+
+const URL = 'http://localhost:3000/todos'
 
 class App extends Component {
   constructor(){

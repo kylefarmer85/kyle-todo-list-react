@@ -13,8 +13,7 @@ class TodoList extends Component {
               </span>
 
               { 
-              completed ? 
-              null :
+              completed ? null :
               <button onClick={() => this.props.markComplete(id)}>Mark Complete</button>
               }
               

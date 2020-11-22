@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "userId": 1,
+      "title": "walk dog",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "title": "go to the store",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "call mom",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "title": "do laundry",
+      "completed": false,
+      "id": 4
+    }
+  ]
+}
